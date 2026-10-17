@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moto Libre – Descarga la app</title>
+<meta name="description" content="Descarga Moto Libre para Android y pide tu mototaxi en Independencia de la Concordia.">
+<style>
+  :root {
+    --bg: #fff8e7;
+    --ink: #1d2a24;
+    --muted: #5b675f;
+    --brand: #0b6e4f;
+    --brand-ink: #ffffff;
+    --accent: #f5b301;
+    --line: #e6dcc0;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14201a;
+      --ink: #f3efe2;
+      --muted: #a9b5ac;
+      --brand: #35c28f;
+      --brand-ink: #0c1812;
+      --accent: #f5b301;
+      --line: #2b3b32;
+      --card: #1b2b23;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+    line-height: 1.55;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  main { max-width: 34rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+  .stripe {
+    height: 10px;
+    background: repeating-linear-gradient(45deg, var(--accent) 0 14px, var(--ink) 14px 28px);
+  }
+  h1 {
+    font-size: clamp(2.4rem, 11vw, 3.4rem);
+    line-height: 1.02;
+    margin: 1.5rem 0 .75rem;
+    letter-spacing: -0.02em;
+  }
+  .lead { font-size: 1.15rem; color: var(--muted); margin: 0 0 1.75rem; }
+  .btn {
+    display: block;
+    text-align: center;
+    background: var(--brand);
+    color: var(--brand-ink);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 1.1rem 1rem;
+    border-radius: 14px;
+    border: 3px solid var(--ink);
+    box-shadow: 5px 5px 0 var(--ink);
+  }
+  .btn:active { transform: translate(3px, 3px); box-shadow: 2px 2px 0 var(--ink); }
+  .btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .meta { text-align: center; color: var(--muted); font-size: .95rem; margin: .9rem 0 2.25rem; }
+  h2 { font-size: 1.35rem; margin: 2.25rem 0 .75rem; }
+  ol { padding-left: 1.4rem; margin: 0; }
+  li { margin-bottom: .6rem; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+  }
+  .card p { margin: 0 0 .6rem; }
+  .card p:last-child { margin-bottom: 0; }
+  code {
+    display: block;
+    overflow-x: auto;
+    font-family: ui-monospace, "Courier New", monospace;
+    font-size: .78rem;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: .6rem .7rem;
+    margin-top: .4rem;
+    word-break: break-all;
+  }
+  footer { margin-top: 2.5rem; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<div class="stripe" aria-hidden="true"></div>
+<main>
+  <h1>Moto Libre</h1>
+  <p class="lead">Pide tu mototaxi desde el celular, con los conductores de tu colonia.</p>
+
+  <!-- ⬇️ CAMBIA ESTE ENLACE por el link directo a tu APK -->
+  <a class="btn" id="descargar" href="PEGA_AQUI_EL_LINK_DEL_APK" download>Descargar para Android</a>
+  <p class="meta">Versión 1.3 · 55 MB · Solo Android</p>
+
+  <h2>Cómo instalarla</h2>
+  <ol>
+    <li>Toca <strong>Descargar para Android</strong>. Si Chrome pregunta si quieres conservar el archivo, toca <strong>Descargar de todos modos</strong>.</li>
+    <li>Abre el archivo descargado (aparece en las notificaciones o en la carpeta Descargas).</li>
+    <li>Si el celular lo pide, toca <strong>Configuración</strong> y activa <strong>Permitir de esta fuente</strong>. Es normal: la app no viene de Play Store.</li>
+    <li>Toca <strong>Instalar</strong> y abre Moto Libre.</li>
+  </ol>
+
+  <h2>¿Es segura?</h2>
+  <div class="card">
+    <p>Moto Libre la hacemos personas de Independencia de la Concordia. Descárgala solo desde esta página.</p>
+    <p>Si quieres comprobar que el archivo no fue cambiado, esta es su huella digital (SHA-256) de la versión 1.3:</p>
+    <code>40a1984a920663a5808a50e0be34941124e106e032de11bcbf112f9895615917</code>
+  </div>
+
+  <footer>¿Dudas o problemas para instalar? Escríbenos por WhatsApp.</footer>
+</main>
+</body>
+</html>
